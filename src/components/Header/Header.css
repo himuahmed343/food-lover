@@ -1,0 +1,50 @@
+.nav{
+    background: transparent;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.nav-link{
+    color: #fff;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.nav-icon{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.nav-icon p{
+    transform: translate(-175%, 100%);
+    font-weight: bold;
+}
+.nav-icon .fa-utensils{
+    font-size: 2rem;
+    transform: translate(-50%, -15%);
+    color: #fff;
+
+
+}
+
+@media screen and (max-width: 480px){
+    .nav-link{
+        position: absolute;
+        top: 10px;
+        left: 25px;
+
+    }
+    
+}
