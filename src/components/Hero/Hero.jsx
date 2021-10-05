@@ -7,7 +7,7 @@ import {
     HeroItems,
     HeroH1,
     HeroP,
-    HeroBtn
+    HeroBtn,
   } from './HeroElements';
 
 const Hero = () => {

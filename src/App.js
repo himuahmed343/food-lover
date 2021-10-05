@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css'
-import Hero from './components/Hero/Hero';
 import {
-  BrowserRouter as Router,
+  BrowserRouter as Router, Switch, Route, 
 } from "react-router-dom";
-import Products from './components/Products/Products';
-import { productData } from './components/Products/Data';
+import Cart from './components/Cart/Cart';
+import Home from './components/Pages/Home';
 
 
 
@@ -13,11 +12,10 @@ function App() {
   return (
     <>
     <Router>
-    {/* <Header /> */}
-    <Hero />
-    <Products heading='Choose your favorite' data={productData} />
-
-
+      <Switch>
+    <Route exact path="/" component={Home} />
+    <Route  path="/cart" component={Cart} />
+        </Switch>
     </Router>
     </>
   );
